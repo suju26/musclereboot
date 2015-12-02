@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Muscles Reboot</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+    
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item >Home</item>
+        <item >Your Profile</item>
+        <item >Fitness Status</item>
+        <item >Communities</item>
+        <item >Pages</item>
+        <item >What\'s Hot</item>
+    </string-array>
+    
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_people</item>
+        <item>@drawable/ic_photos</item>
+        <item>@drawable/ic_communities</item>
+        <item>@drawable/ic_pages</item>
+        <item>@drawable/ic_whats_hot</item>
+    </array>
+    
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+    
+    
+      <!-- FitMath Resources-->
+    
+    <string name="abs__action_bar_home_description">Navigate home</string>
+    <string name="abs__action_bar_up_description">Navigate up</string>
+    <string name="abs__action_menu_overflow_description">More options</string>
+    <string name="abs__action_mode_done">Done</string>
+    <string name="abs__activity_chooser_view_see_all">See all...</string>
+    <string name="abs__activitychooserview_choose_application">Choose an application</string>
+    <string name="abs__searchview_description_clear">Clear query</string>
+    <string name="abs__searchview_description_query">Search query</string>
+    <string name="abs__searchview_description_search">Search</string>
+    <string name="abs__searchview_description_submit">Submit query</string>
+    <string name="abs__searchview_description_voice">Voice search</string>
+    <string name="abs__shareactionprovider_share_with">Share with</string>
+    <string name="abs__shareactionprovider_share_with_application">Share with %s</string>
+   
+    <string name="admob_id">ca-app-pub-2611453804745876/3228886948</string>
+    <string name="back_button_label">Back</string>
+    <string name="card_empty_cardwithlist_text">No data....</string>
+    <string name="card_progressbar_cardwithlist_text">Loading data...</string>
+    <string name="confirm_donate">Do you love FitMath? If so, please consider making a small donation to show your appreciation and to support my app development!</string>
+    <string name="error_1rm_reps_req">Reps is required</string>
+    <string name="error_1rm_weight_req">Weight lifted is required</string>
+    <string name="error_age_required">Age is required</string>
+    <string name="error_bf_required">Body Fat % is required</string>
+    <string name="error_goal_calories_required">Goal calories are required</string>
+    <string name="error_heightcm_required">Height(cm) is required</string>
+    <string name="error_heightft_required">Height(ft) is required</string>
+    <string name="error_heightin_required">Height(in) is required</string>
+    <string name="error_mhr_required">MHR is required</string>
+    <string name="error_nutrition_split_add_up">Nutrition Split does not add up to 100%</string>
+    <string name="error_nutrition_split_incomplete">Nutrition Split - all 3 required</string>
+    <string name="error_required_forearm">Forearm is required</string>
+    <string name="error_required_goal_number_of_days">Number of days required</string>
+    <string name="error_required_goal_weight">Goal weight is required</string>
+    <string name="error_required_hip">Hip is required</string>
+    <string name="error_required_neck">Neck is required</string>
+    <string name="error_required_profile">Please set up a profile first!</string>
+    <string name="error_required_waist">Waist is required</string>
+    <string name="error_required_wrist">Wrist is required</string>
+    <string name="error_rhr_required">RHR is required</string>
+    <string name="error_tdee_required">TDEE is required</string>
+    <string name="error_weight_required">Weight is required</string>
+    <string name="feedback_summary">Click to send me an email with any feedback/feature requests.</string>
+    <string name="header_macro_day">Macro Split Per Day</string>
+    <string name="header_welcome">Welcome!</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="help_1rm">file:///android_asset/help_one_rep_max.html</string>
+    <string name="help_bmi">file:///android_asset/help_bmi.html</string>
+    <string name="help_bmr_tdee">file:///android_asset/help_bmr_tdee.html</string>
+    <string name="help_bmr_tdee_advanced">file:///android_asset/help_bmr_tdee_advanced.html</string>
+    <string name="help_body_fat">file:///android_asset/help_body_fat.html</string>
+    <string name="help_bsa">file:///android_asset/help_bsa.html</string>
+    <string name="help_cal_def">file:///android_asset/help_cal_def.html</string>
+    <string name="help_creatine">file:///android_asset/help_creatine.html</string>
+    <string name="help_heart_rate">file:///android_asset/help_heart_rate.html</string>
+    <string name="help_ideal_weight">file:///android_asset/help_ideal_weight.html</string>
+    <string name="help_ideal_weight_advanced">file:///android_asset/help_ideal_weight_advanced.html</string>
+    <string name="help_lbm">file:///android_asset/help_lbm.html</string>
+    <string name="help_lbm_bmr_bf">file:///android_asset/help_lbm_bmr_bf.html</string>
+    <string name="help_licenses">file:///android_asset/help_licenses.html</string>
+    <string name="help_macro_cal">file:///android_asset/help_macro_cal.html</string>
+    <string name="help_macro_nutrition">file:///android_asset/help_macro_nutrition.html</string>
+    <string name="help_macro_result">file:///android_asset/help_macro_result.html</string>
+    <string name="help_mhr_advanced">file:///android_asset/help_mhr_advanced.html</string>
+    <string name="help_profile">file:///android_asset/help_profile.html</string>
+    <string name="help_protein">file:///android_asset/help_protein.html</string>
+    <string name="help_race_time">file:///android_asset/help_race_time.html</string>
+    <string name="help_thr_advanced">file:///android_asset/help_thr_advanced.html</string>
+    <string name="help_welcome">file:///android_asset/help_welcome.html</string>
+    <string name="labal_percentage_mhr">Percentage of MHR</string>
+    <string name="labal_rhr">Resting Heart Rate</string>
+    <string name="label_1rm_1rm">1RM</string>
+    <string name="label_1rm_50percent">50% of 1RM</string>
+    <string name="label_1rm_55percent">55% of 1RM</string>
+    <string name="label_1rm_60percent">60% of 1RM</string>
+    <string name="label_1rm_65percent">65% of 1RM</string>
+    <string name="label_1rm_70percent">70% of 1RM</string>
+    <string name="label_1rm_75percent">75% of 1RM</string>
+    <string name="label_1rm_80percent">80% of 1RM</string>
+    <string name="label_1rm_85percent">85% of 1RM</string>
+    <string name="label_1rm_90percent">90% of 1RM</string>
+    <string name="label_1rm_95percent">95% of 1RM</string>
+    <string name="label_1rm_weight_lifted">Weight lifted</string>
+    <string name="label_Boyd">Boyd</string>
+    <string name="label_DuBois">DuBois</string>
+    <string name="label_Gehan">Gehan &amp; George</string>
+    <string name="label_Haycock">Haycock</string>
+    <string name="label_LBM">Lean Body Mass</string>
+    <string name="label_Mosteller">Mosteller</string>
+    <string name="label_Schlich">Schlich</string>
+    <string name="label_age">Age</string>
+    <string name="label_bf_percentage">Body Fat %</string>
+    <string name="label_bj_devine">B. J. Devine</string>
+    <string name="label_bmi">BMI</string>
+    <string name="label_bmr">BMR</string>
+    <string name="label_bmr_tdee">BMR/TDEE</string>
+    <string name="label_boer">Boer</string>
+    <string name="label_bsa">BSA</string>
+    <string name="label_calculate">Calculate</string>
+    <string name="label_calorie_goal">Step 1: Calorie Goal</string>
+    <string name="label_calories">Calories</string>
+    <string name="label_carb">Carb</string>
+    <string name="label_choose_nutrition_plan">Choose your nutrition plan:</string>
+    <string name="label_creatine_load">Loading</string>
+    <string name="label_creatine_maintenance">Maintenance</string>
+    <string name="label_custom_cal">Custom</string>
+    <string name="label_custom_plan">Custom Plan</string>
+    <string name="label_days">Days</string>
+    <string name="label_drmiller">D. R. Miller</string>
+    <string name="label_estimated_body_fat">Estimated Body Fat</string>
+    <string name="label_fat">Fat</string>
+    <string name="label_forearm">Forearm</string>
+    <string name="label_formula">Formula</string>
+    <string name="label_gj_hamwi">G. J. Hamwi</string>
+    <string name="label_goal">Choose your goal:</string>
+    <string name="label_goal_cal_tdee">Your daily calorie goal per your TDEE</string>
+    <string name="label_goal_cal_too_low">Your goal calories are too low. This could be detrimental for your health.</string>
+    <string name="label_goal_calories">Your Goal Calories</string>
+    <string name="label_goal_weight">Goal weight</string>
+    <string name="label_grams">Grams</string>
+    <string name="label_gulati">Gulati</string>
+    <string name="label_harris_benedict">Harris Benedict Formula</string>
+    <string name="label_haskell">Haskell</string>
+    <string name="label_heart_rate">Heart Rate (bpm)</string>
+    <string name="label_hip">Hip</string>
+    <string name="label_hume">Hume</string>
+    <string name="label_ideal_weight">Ideal Weight</string>
+    <string name="label_james">James</string>
+    <string name="label_jdrobinson">J. D. Robinson</string>
+    <string name="label_karvonen">Karvonen</string>
+    <string name="label_lund">Lund</string>
+    <string name="label_mhr">Max Heart Rate</string>
+    <string name="label_mhr_bpm">MHR (bpm)</string>
+    <string name="label_mifflin">Mifflin-St Jeor Formula</string>
+    <string name="label_neck">Neck</string>
+    <string name="label_nutrition_plan">Step 2: Nutrition Plan</string>
+    <string name="label_protein">Protein</string>
+    <string name="label_protein_category">Select category</string>
+    <string name="label_rec_creatine">Recommended Creatine Intake</string>
+    <string name="label_rec_protein">Recommended Protein Intake</string>
+    <string name="label_reps">How many reps?</string>
+    <string name="label_robergs">Robergs</string>
+    <string name="label_tanaka">Tanaka</string>
+    <string name="label_tdee">TDEE</string>
+    <string name="label_thr_zone1">THR - Moderate</string>
+    <string name="label_thr_zone2">THR - Fat Burn</string>
+    <string name="label_thr_zone3">THR - Aerobic</string>
+    <string name="label_thr_zone4">THR - Anaerobic</string>
+    <string name="label_thr_zone5">THR - Max Effort</string>
+    <string name="label_time_period">How many days?</string>
+    <string name="label_us_navy">US Navy</string>
+    <string name="label_waist">Waist</string>
+    <string name="label_wrist">Wrist</string>
+    <string name="label_ymca">YMCA</string>
+    <string name="label_your_bmi">Your BMI is</string>
+    <string name="label_your_bmr">Your BMR is</string>
+    <string name="label_your_ideal_weight">Your ideal weight is</string>
+    <string name="label_your_macro_split">Your Macro Split</string>
+    <string name="label_your_tdee">Your TDEE is</string>
+    <string name="label_zoladz">Zoladz</string>
+    <string name="license_summary">Libraries used for the app</string>
+    <string name="list_card_undo_title">Undo</string>
+    <string name="menu_item_pro">Donate</string>
+    <string name="nav_header_title_advanced">ADVANCED</string>
+    <string name="nav_header_title_basic">BASIC</string>
+    <string name="nav_header_title_profile">PROFILE</string>
+    <string name="nav_item_1rm">One Rep Max</string>
+    <string name="nav_item_bmr_tdee">BMR/TDEE</string>
+    <string name="nav_item_body_fat">Body Fat Estimate</string>
+    <string name="nav_item_bsa">Body Surface Area</string>
+    <string name="nav_item_cal_def">Calorie Deficit/Excess</string>
+    <string name="nav_item_creatine">Creatine Intake</string>
+    <string name="nav_item_fit_report">Fitness Report</string>
+    <string name="nav_item_ideal_weight">Ideal Weight</string>
+    <string name="nav_item_lbm_bmr_bf">LBM and BMR from Body Fat</string>
+    <string name="nav_item_lbm_estimate">LBM - Estimate</string>
+    <string name="nav_item_macro">Macro Split</string>
+    <string name="nav_item_mhr">Max Heart Rate (MHR)</string>
+    <string name="nav_item_profile">Profile</string>
+    <string name="nav_item_protein">Protein Intake</string>
+    <string name="nav_item_race">Race Time Prediction</string>
+    <string name="nav_item_thr">Target Heart Rate (THR)</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="next_button_label">Next</string>
+    <string name="preference_item_feedback">Feedback</string>
+    <string name="preference_item_library_licenses">Library Licenses</string>
+    <string name="preference_item_rate">Leave a rating</string>
+    <string name="preference_item_unit_of_measurement">Unit of Measurement</string>
+    <string name="preference_item_unit_value_default">1</string>
+    <string name="preference_title_measurement">Measurement</string>
+    <string name="preference_title_thanks_feedback">Thanks and Feedback</string>
+    <string name="profile_activity_label">Activity Level</string>
+    <string name="profile_cms_text">cm</string>
+    <string name="profile_female_text">Female</string>
+    <string name="profile_ft_text">feet</string>
+    <string name="profile_height_text">Height</string>
+    <string name="profile_inches_text">inch</string>
+    <string name="profile_kg_text">kg</string>
+    <string name="profile_male_text">Male</string>
+    <string name="profile_sex_text">Sex</string>
+    <string name="profile_weight_label">Weight</string>
+    <string name="rate_summary">If you like the app and find it useful, please consider leaving a rating on the Play Store.</string>
+    <string name="skip_button_label">Skip</string>
+    <string name="text_save">Save</string>
+    <string name="title_activity_calorie_deficit_chooser">CalorieDeficitChooserActivity</string>
+    <string name="title_activity_iab">Fit Math Ad Free</string>
+    <string name="title_activity_main_settings">Settings</string>
+    <string name="title_donate">Love Fitmath?</string>
+
+</resources>
