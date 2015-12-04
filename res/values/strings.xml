@@ -11,7 +11,7 @@
     <string-array name="nav_drawer_items">
         <item >Home</item>
         <item >Your Profile</item>
-        <item >Fitness Status</item>
+        <item >Macro Requirement</item>
         <item >Communities</item>
         <item >Pages</item>
         <item >What\'s Hot</item>
@@ -228,8 +228,8 @@
     <string name="profile_activity_label">Activity Level</string>
     <string name="profile_cms_text">cm</string>
     <string name="profile_female_text">Female</string>
-    <string name="profile_ft_text">feet</string>
-    <string name="profile_height_text">Height</string>
+    <string name="profile_ft_text">cm</string>
+    <string name="profile_height_text">Height(cm)</string>
     <string name="profile_inches_text">inch</string>
     <string name="profile_kg_text">kg</string>
     <string name="profile_male_text">Male</string>

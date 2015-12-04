@@ -170,10 +170,10 @@ public class MainActivity extends Activity {
 			fragment = new YourProfileFragment();
 			break;
 		case 2:
-			fragment = new PhotosFragment();
+			fragment = new Macro_Requirement_Fragment();
 			break;
 		case 3:
-			fragment = new FitnessStatus();
+			fragment = new PhotosFragment();
 			break;
 		case 4:
 			fragment = new PagesFragment();
