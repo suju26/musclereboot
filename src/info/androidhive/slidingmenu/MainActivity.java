@@ -167,16 +167,16 @@ public class MainActivity extends Activity {
 			fragment = new HomeFragment();
 			break;
 		case 1:
-			fragment = new YourProfileFragment();
+			fragment = new Your_Profile_Fragment();
 			break;
 		case 2:
-			fragment = new Macro_Requirement_Fragment();
+			fragment = new Your_Goal_Fragment();
 			break;
 		case 3:
-			fragment = new PhotosFragment();
+			fragment = new Macro_Required_Fragment();
 			break;
 		case 4:
-			fragment = new PagesFragment();
+			fragment = new Macro_Required_Fragment();
 			break;
 		case 5:
 			fragment = new WhatsHotFragment();

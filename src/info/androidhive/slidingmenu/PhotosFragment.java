@@ -26,7 +26,7 @@ public class PhotosFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
  
-        View rootView = inflater.inflate(R.layout.fragment_macro_requirement, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_your_goal, container, false);
         /*Spinner activity_spinner = (Spinner) rootView.findViewById(R.id.macro_calculate_goal);
       		// Spinner click listener
       		// activity_spinner.setOnItemSelectedListener(this);

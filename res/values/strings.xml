@@ -11,8 +11,8 @@
     <string-array name="nav_drawer_items">
         <item >Home</item>
         <item >Your Profile</item>
-        <item >Macro Requirement</item>
-        <item >Communities</item>
+        <item >Your Goal</item>
+        <item >Your Macro Requirement</item>
         <item >Pages</item>
         <item >What\'s Hot</item>
     </string-array>
@@ -237,7 +237,7 @@
     <string name="profile_weight_label">Weight</string>
     <string name="rate_summary">If you like the app and find it useful, please consider leaving a rating on the Play Store.</string>
     <string name="skip_button_label">Skip</string>
-    <string name="text_save">Save</string>
+    <string name="text_save">Your Total Daily Energy Required</string>
     <string name="title_activity_calorie_deficit_chooser">CalorieDeficitChooserActivity</string>
     <string name="title_activity_iab">Fit Math Ad Free</string>
     <string name="title_activity_main_settings">Settings</string>
