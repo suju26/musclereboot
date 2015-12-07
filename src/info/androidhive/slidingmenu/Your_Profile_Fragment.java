@@ -5,6 +5,7 @@ import java.util.List;
 
 
 
+
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.Context;
@@ -23,6 +24,7 @@ import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Your_Profile_Fragment extends Fragment {
 	Spinner spinneractivity ;
@@ -53,6 +55,7 @@ public class Your_Profile_Fragment extends Fragment {
 		// activity_spinner.setOnItemSelectedListener(this);
 		// Spinner Drop down elements
 		List<String> setactivity = new ArrayList<String>();
+		setactivity.add("Select Your Activity Level");
 		setactivity.add("Little to no exercise");
 		setactivity.add("3 time per week");
 		setactivity.add("5 time per week");
@@ -133,96 +136,116 @@ public class Your_Profile_Fragment extends Fragment {
 		String age_string=age.getText().toString();
 		String height_string=height.getText().toString();
 		String weight_string=weight.getText().toString();
-		
+
 		if(age_string.equals("")||height_string.equals("")||weight_string.equals("")){
-			
+
+			Toast.makeText(getActivity(), "Enter all Required Details",
+					Toast.LENGTH_SHORT).show();
+
 		}else{
-		double age_input= Double.parseDouble(age_string);
-		
-		double height_input=Double.parseDouble(height_string);
-		
-		double weight_input= Double.parseDouble(weight_string);
+			if(selected_Activity_level.equals("Select Your Activity Level"))
+			{
+				Toast.makeText(getActivity(), "Please Select your Activity Level",
+						Toast.LENGTH_SHORT).show();
+			}else{
+				double age_input= Double.parseDouble(age_string);
 
-		//BMR Calculation 
+				double height_input=Double.parseDouble(height_string);
 
-		int selectedId=radiogender.getCheckedRadioButtonId();
-		radioSexButton=(RadioButton)rootView.findViewById(selectedId);
-		if(radioSexButton.getText().equals("Male")){
-			bmr=10*weight_input+6.25*height_input-5*age_input+5;
-		}
-		if(radioSexButton.getText().equals("Female"))
-		{
-			bmr=10*weight_input+6.25*height_input-5*age_input-161;
+				double weight_input= Double.parseDouble(weight_string);
 
-		}
+				//BMR Calculation 
+
+				int selectedId=radiogender.getCheckedRadioButtonId();
+				radioSexButton=(RadioButton)rootView.findViewById(selectedId);
+				if(radioSexButton.getText().equals("Male")){
+					bmr=10*weight_input+6.25*height_input-5*age_input+5;
+				}
+				if(radioSexButton.getText().equals("Female"))
+				{
+					bmr=10*weight_input+6.25*height_input-5*age_input-161;
+
+				}
 
 
 
-		if(selected_Activity_level.equals("Little to no exercise"))
-		{
-			tdde=bmr*1.2;
-		}
-		if(selected_Activity_level.equals("3 time per week"))
-		{
-			tdde=bmr*1.375;
-		}
-		if(selected_Activity_level.equals("5 time per week"))
-		{
-			tdde=bmr*1.55;
-		}
-		if(selected_Activity_level.equals("Daily Exercise and physical job"))
-		{
-			tdde=bmr*1.725;
-		}
-		String final_tdde=Double.toString(Math.round(tdde));
+				if(selected_Activity_level.equals("Little to no exercise"))
+				{
+					tdde=bmr*1.2;
+				}
+				if(selected_Activity_level.equals("3 time per week"))
+				{
+					tdde=bmr*1.375;
+				}
+				if(selected_Activity_level.equals("5 time per week"))
+				{
+					tdde=bmr*1.55;
+				}
+				if(selected_Activity_level.equals("Daily Exercise and physical job"))
+				{
+					tdde=bmr*1.725;
+				}
+				String final_tdde=Double.toString(Math.round(tdde));
 
-		SharedPreferences.Editor editor = sharedpreferences.edit();
-		editor.putString("bmr_key", final_tdde);
-		editor.putString("age_key",age_string );
-		editor.putString("weight_key",weight_string );
-		editor.putString("height_key", height_string);
-		if(selectedId == R.id.profile_ui_male_radio)
-			editor.putBoolean("is_male", true);
-		else
-			editor.putBoolean("is_male", false);
+				SharedPreferences.Editor editor = sharedpreferences.edit();
+				editor.putString("bmr_key", final_tdde);
+				editor.putString("age_key",age_string );
+				editor.putString("weight_key",weight_string );
+				editor.putString("height_key", height_string);
+				if(selectedId == R.id.profile_ui_male_radio)
+					editor.putBoolean("is_male", true);
+				else
+					editor.putBoolean("is_male", false);
 
-		editor.commit();
-		
-		Fragment fragment = new Your_Goal_Fragment();
-		// Insert the fragment by replacing any existing fragment
-		FragmentManager fragmentManager = getFragmentManager();
-		fragmentManager.beginTransaction()
-		               .replace(R.id.frame_container, fragment)
-		               .commit();
-		
-			
+				editor.commit();
+
+				Fragment fragment = new Your_Goal_Fragment();
+				// Insert the fragment by replacing any existing fragment
+				FragmentManager fragmentManager = getFragmentManager();
+				fragmentManager.beginTransaction()
+				.replace(R.id.frame_container, fragment)
+				.commit();
+
+
+			}
 		}
 	}
 
 	public void onheight()
 	{
 		TextView feet=(TextView)rootView.findViewById(R.id.editText2);
-		String feet_input=feet.getText().toString();
-		double feet_num=Double.parseDouble(feet_input);
 		TextView inch=(TextView)rootView.findViewById(R.id.editText3);
-		String inch_input=inch.getText().toString();
-		double inch_num=Double.parseDouble(inch_input);
-		double result_feet=feet_num*12;
-		double result_height=(result_feet+inch_num)*2.5;
 		TextView result_txt=(TextView)rootView.findViewById(R.id.textView5);
-		result_txt.setText(""+Math.round(result_height));
+		String feet_input=feet.getText().toString();
+		String inch_input=inch.getText().toString();
+		if(feet_input.equals("")||inch_input.equals("")){
+
+			Toast.makeText(getActivity(), "Enter your Height In Feet and Inches (Eg 5 10)",
+					Toast.LENGTH_SHORT).show();
+		}else{
+			double feet_num=Double.parseDouble(feet_input);
+			double inch_num=Double.parseDouble(inch_input);
+			double result_feet=feet_num*12;
+			double result_height=(result_feet+inch_num)*2.5;
+			result_txt.setText(""+Math.round(result_height));
+		}
 	}
 
 	public void onweight()
 	{
 		TextView weight=(TextView)rootView.findViewById(R.id.editText1);
 		String weight_input=weight.getText().toString();
-		double weight_num=Double.parseDouble(weight_input);
-		double weight_result=weight_num/2.2046;
-		TextView inkg=(TextView)rootView.findViewById(R.id.textView6);
-		inkg.setText(""+Math.round(weight_result));
+		if(weight_input.equals(""))
+		{
+			Toast.makeText(getActivity(), "Enter your Weight in LBS (Eg:142)",
+					Toast.LENGTH_SHORT).show();
+		}else{
+			double weight_num=Double.parseDouble(weight_input);
+			double weight_result=weight_num/2.2046;
+			TextView inkg=(TextView)rootView.findViewById(R.id.textView6);
+			inkg.setText(""+Math.round(weight_result));
+		}
+
 	}
-
 }
-
 

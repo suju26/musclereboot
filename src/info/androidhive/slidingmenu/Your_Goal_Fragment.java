@@ -16,6 +16,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
+import android.widget.Toast;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.TextView;
 
@@ -69,6 +70,7 @@ public class Your_Goal_Fragment extends Fragment {
 		// activity_spinner.setOnItemSelectedListener(this);
 		// Spinner Drop down elements
 		List<String> setactivity = new ArrayList<String>();
+		setactivity.add("Choose your Goal");
 		setactivity.add("Gain Weight");
 		setactivity.add("Loss Weight");
 		setactivity.add("Maintain Weight");
@@ -102,6 +104,16 @@ public class Your_Goal_Fragment extends Fragment {
 
 
 				//TDEE Calculation Based on Goal Selected
+				
+				if(selectedgoal.equals("Choose your Goal"))
+				{
+					tdde_activity=tdee_result.getText().toString();
+					Log.e("", "Sujit"+tdde_activity);
+					tdde_num=Double.parseDouble(tdde_activity);
+					tdde_goal=0;
+					text_gaol.setText(""+Math.round(tdde_goal));
+
+				}
 
 				if(selectedgoal.equals("Gain Weight"))
 				{
@@ -173,6 +185,12 @@ public class Your_Goal_Fragment extends Fragment {
 	}
 	public void on_nutri()
 	{
+		if(selectedgoal.equals("Choose your Goal"))
+		{
+			Toast.makeText(getActivity(), "Choose Your Desired Goal",
+					   Toast.LENGTH_SHORT).show();
+
+		}else{
 		//text_gaol
 		String your_goal=text_gaol.getText().toString();
 		SharedPreferences.Editor editor = sharedpreferences.edit();
@@ -184,6 +202,7 @@ public class Your_Goal_Fragment extends Fragment {
 		fragmentManager.beginTransaction()
 		.replace(R.id.frame_container, fragment)
 		.commit();
+	}
 	}
 	public void on_bck_pro()
 	{

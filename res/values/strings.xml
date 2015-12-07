@@ -9,12 +9,12 @@
     
     <!-- Nav Drawer Menu Items -->
     <string-array name="nav_drawer_items">
-        <item >Home</item>
+        <item >Getting Started</item>
         <item >Your Profile</item>
         <item >Your Goal</item>
         <item >Your Macro Requirement</item>
-        <item >Pages</item>
-        <item >What\'s Hot</item>
+        <item >Sample Diet</item>
+        <item >Feeds</item>
     </string-array>
     
     <!-- Nav Drawer List Item Icons -->
